@@ -113,6 +113,14 @@ write bytes into response outputstream
         }
     }
 
+**Test**
+upload
+![alt text](https://raw.githubusercontent.com/PeaceUCR/SpringBootInDepth/master/Screen%20Shot%202018-07-19%20at%205.00.56%20PM.png)
+
+download . 
+http://localhost:8080/files/511531243880_.pic.jpg
+file . 
+http://localhost:8080/upload/511531243880_.pic.jpg
 
 # Socket 
 open webpage at http://localhost:8080/template/index.html  
