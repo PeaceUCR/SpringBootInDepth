@@ -1,6 +1,59 @@
 # SpringBoot Demo
 **Filter + Static File Configuration+ MultiThreading+ File upload&download+ Socket**
 
+# Heroku Deployment Issue& MVN package error issue
+ref
+
+https://stackoverflow.com/questions/43574426/how-to-resolve-java-lang-noclassdeffounderror-javax-xml-bind-jaxbexception-in-j
+https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
+https://springframework.guru/jackson-dependency-issue-spring-boot-maven/
+
+add     
+
+		<!-- jackson dependency issue-->
+		<!-- https://springframework.guru/jackson-dependency-issue-spring-boot-maven/-->
+		<!-- please ignore version here -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<!-- jackson dependency issue-->
+		<!-- https://springframework.guru/jackson-dependency-issue-spring-boot-maven/-->
+		<!-- please ignore version here -->
+    
+    		<!-- error here with mvn package -->
+		<!-- https://stackoverflow.com/questions/43574426/how-to-resolve-java-lang-noclassdeffounderror-javax-xml-bind-jaxbexception-in-j -->
+		<!-- Java 6 = JAX-B Version 2.0   -->
+		<!-- Java 7 = JAX-B Version 2.2.3 -->
+		<!-- Java 8 = JAX-B Version 2.2.8 -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+
+
 This Demo is inherit from https://github.com/PeaceUCR/SpringBoot-Rest-Swagger-Log4j
 
 Let's Go
@@ -123,6 +176,8 @@ file .
 http://localhost:8080/upload/511531243880_.pic.jpg
 
 # Socket 
+structre of socket
+![alt text](https://github.com/PeaceUCR/SpringBootInDepth/blob/master/drawIO.png?raw=true)
 open webpage at http://localhost:8080/template/index.html  
 
 Reference
