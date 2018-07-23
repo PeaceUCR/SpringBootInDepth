@@ -4,6 +4,38 @@
     box-sizing: border-box;
 }
 
+.footer{
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+
+.footer h1{
+    font-size: 18px;
+    padding: 0.6rem 2rem;
+    margin: 0;
+}
+
+.footer .icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 16px;
+    padding-left: 2rem;
+    padding-bottom: 0.6rem;
+    justify-content: center;
+}
+
+.footer .icons p{
+    margin: 0;
+}
+
+.footer .icons p i{
+    font-family: FontAwesome;
+    font-style: normal;
+}
+
 html,body {
     height: 100%;
     overflow: hidden;
